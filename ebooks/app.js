@@ -23,6 +23,25 @@ app.get("/getall", (req,res)=>{
         data: ebook
     })
 })
+app.post("/addbook",(req,res)=>{
+    let newbook={
+        id : '3',
+        name : 'Book3'
+    }
+    ebook.push(newbook);
+    res.json({
+        message : "Book added successfully",
+        bookDetails : newbook
+    })
+})
+app.delete("/delbook",(req,res)=>{
+    const deletedbook = ebook.pop();
+    res.json({
+        message : "Book deleted successfully",
+        bookDetails : deletedbook
+    })
+})
+
 const port = 3000;
 app.listen(port, ()=>{
     console.log(`Server is running in ${port}`);
