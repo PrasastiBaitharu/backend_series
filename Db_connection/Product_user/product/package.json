@@ -1,0 +1,19 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Prasasti",
+  "license": "ISC",
+  "description": "Database connection with products",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.0",
+    "nodemon": "^3.1.9"
+  }
+}
