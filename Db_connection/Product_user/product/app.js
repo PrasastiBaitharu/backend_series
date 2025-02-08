@@ -11,7 +11,6 @@ app.get("/",(req,res)=>{
     })
 })
 app.get("/getall" , getAllProduct)
-
 port = process.env.PORT||3000;
 app.listen(port,()=>{
     console.log(`Server is running in ${port}`);
